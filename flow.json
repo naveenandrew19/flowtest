@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "421262fd7c46c022",
+        "type": "tab",
+        "label": "Tamil",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "c5700d4c8a307a7a",
         "type": "inject",
         "z": "8bcd83f612a85c5a",
@@ -50,6 +58,155 @@
         "statusType": "auto",
         "x": 360,
         "y": 140,
+        "wires": []
+    },
+    {
+        "id": "69a14417b45e1442",
+        "type": "function",
+        "z": "8bcd83f612a85c5a",
+        "name": "function 2",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "230a0e9365b371b3"
+            ]
+        ]
+    },
+    {
+        "id": "230a0e9365b371b3",
+        "type": "switch",
+        "z": "8bcd83f612a85c5a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "b782bff832aa9869"
+            ]
+        ]
+    },
+    {
+        "id": "b782bff832aa9869",
+        "type": "debug",
+        "z": "8bcd83f612a85c5a",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b473f3c171bff017",
+        "type": "inject",
+        "z": "421262fd7c46c022",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "bd7b3fce64f620fe"
+            ]
+        ]
+    },
+    {
+        "id": "bd7b3fce64f620fe",
+        "type": "function",
+        "z": "421262fd7c46c022",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "e268704d3d740667"
+            ]
+        ]
+    },
+    {
+        "id": "e268704d3d740667",
+        "type": "switch",
+        "z": "421262fd7c46c022",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "e7d5e62a2cf0c246"
+            ]
+        ]
+    },
+    {
+        "id": "e7d5e62a2cf0c246",
+        "type": "debug",
+        "z": "421262fd7c46c022",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 240,
         "wires": []
     }
 ]
