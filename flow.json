@@ -1,1 +1,55 @@
-[]
+[
+    {
+        "id": "8bcd83f612a85c5a",
+        "type": "tab",
+        "label": "Naveen",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c5700d4c8a307a7a",
+        "type": "inject",
+        "z": "8bcd83f612a85c5a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "a0d3ca90a8a3f1d6"
+            ]
+        ]
+    },
+    {
+        "id": "a0d3ca90a8a3f1d6",
+        "type": "debug",
+        "z": "8bcd83f612a85c5a",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 140,
+        "wires": []
+    }
+]
